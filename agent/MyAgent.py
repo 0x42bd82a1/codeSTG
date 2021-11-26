@@ -15,6 +15,7 @@ if __name__ == '__main__':
     nmsl.connectPort(my_addr)
     my_idx = None   # 自己控制的玩家的id
     timer = 0       # 计时器
+    direction = 1
     while True:
         try:
             timer += 1
@@ -45,8 +46,8 @@ if __name__ == '__main__':
             opr['accX'] = (enemy_pos_x - my_pos_x) * direction  # 直接向对方加速
             opr['accY'] = (enemy_pos_y - my_pos_y) * direction  #
             opr['accR'] = 1                                     # 并且逆时针旋转
-            opr['fire'] = 1                                     # 并且射击
-            direction = (timer % 100 > 20)*2-1                  # 并且后退并撞击
+            opr['fire'] = 1                                     # 并且随意射击
+            direction = (timer % 100 > 20)*2-1                  # 定时后退并撞击
 
             print(my_pos_x, my_pos_y)
 
