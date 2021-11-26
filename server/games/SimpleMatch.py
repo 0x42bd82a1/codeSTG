@@ -31,5 +31,5 @@ class SimpleMatch(ServerGame):
         if not self.player2.states['alive']:
             self.p1_score += 1
             self.player2 = self.entity_manager.addEntity("Rotor1", position=(10, 0))
-            self.player_manager.bindPlayer(self.player2, ('127.0.0.1', 4109))
+            self.player_manager.bindPlayer(self.player2, ('127.0.0.1', 4110))
             print(self.p1_score, ':', self.p2_score)
