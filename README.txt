@@ -13,6 +13,7 @@
 agent目录里有一个很随性的样例
 名为MyAgent.py，可以参考
 没有API，数据格式很简单所以丢给用户自己写。
+serverEntities、clientEntities、games里可以放自己写的派生类，启动时会加载。
 
 ##贡献者：
 策划一个人，放飞自我乱写了一星期，应该可以运行。
